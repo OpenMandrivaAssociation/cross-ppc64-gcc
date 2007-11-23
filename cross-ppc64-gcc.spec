@@ -39,7 +39,7 @@
 %define gcj_alternative_priority 20
 %define gcj_alternative_programs jar rmic rmiregistry grepjar java
 
-# Define Mandrakelinux version we are building for
+# Define Mandrivalinux version we are building for
 %define mdkversion		%(perl -pe '/(\\d+)\\.(\\d)\\.?(\\d)?/; $_="$1$2".($3||0)' /etc/mandrake-release)
 
 # Define if building a cross compiler
@@ -264,7 +264,7 @@ Patch2: gcc33-pr9929-testcase.patch.bz2
 Patch3: gcc34-ada-64bithack.patch.bz2
 Patch4: gcc34-dont-crash-with-nonexistent-file.patch.bz2
 
-# Mandrake patches
+# Mandriva patches
 Patch100: colorgcc-1.3.2-mdkconf.patch.bz2
 Patch101: gcc33-pass-slibdir.patch.bz2
 Patch102: gcc32-pr7434-testcase.patch.bz2
@@ -797,7 +797,7 @@ documentation in PDF.
 %patch3 -p1 -b .ada-64bithack
 %patch4 -p1 -b .dont-crash-with-nonexistent-file
 
-# Mandrake patches
+# Mandriva patches
 %patch101 -p1 -b .pass-slibdir
 %patch102 -p1 -b .pr7434-testcase
 %patch103 -p1 -b .pr8213-testcase
@@ -835,10 +835,10 @@ patch -p0 < gcc/p/diffs/gcc-3.4.1.diff
 %patch111 -p1 -b .gpc-fixes
 %patch112 -p1 -b .gpc-serialize-build
 
-# Mandrakezification for bug reports
+# Mandrivazification for bug reports
 perl -pi -e 's/%{snapshot_version}/%{version}/' gcc/version.c
-perl -pi -e "/bug_report_url/ and s/\"[^\"]+\"/\"<URL:https:\/\/qa.mandrakesoft.com\/>\"/;" \
-         -e '/version_string/ and s/([0-9]*(\.[0-9]*){1,3}).*(\";)$/\1 \(Mandrakelinux %{mdk_version} %{version}-%{release}\)\3/;' \
+perl -pi -e "/bug_report_url/ and s/\"[^\"]+\"/\"<URL:https:\/\/qa.mandriva.com\/>\"/;" \
+         -e '/version_string/ and s/([0-9]*(\.[0-9]*){1,3}).*(\";)$/\1 \(Mandriva Linux %{mdk_version} %{version}-%{release}\)\3/;' \
          gcc/version.c
 
 # ColorGCC patch
