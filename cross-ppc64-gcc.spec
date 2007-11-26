@@ -320,8 +320,8 @@ BuildRequires:	%{name}-gnat >= 3.1, %{libgnat_name} >= 3.1
 Requires:	%{name}-cpp = %{version}-%{release}
 # FIXME: We need a libgcc with 3.4 symbols
 Requires:	%{libgcc_name_orig} >= 3.3.2-5mdk
-Prereq:		/sbin/install-info
-Prereq:		/usr/sbin/update-alternatives
+Prereq:		info-install
+Prereq:		update-alternatives
 BuildRequires:	gettext, flex, bison
 BuildRequires:	texinfo >= 4.1
 # Make sure pthread.h doesn't contain __thread keyword
