@@ -702,7 +702,7 @@ Group:		Development/C
 Obsoletes:	gcc%{branch}-cpp
 Provides:	gcc%{branch}-cpp = %{version}-%{release}
 %endif
-Prereq:		/sbin/install-info
+Prereq:		info-install
 Prereq:		/usr/sbin/update-alternatives
 
 %description cpp
