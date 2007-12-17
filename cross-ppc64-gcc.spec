@@ -293,7 +293,6 @@ Patch203: gcc34-visibility1.patch.bz2
 Patch204: gcc34-visibility2.patch.bz2
 Patch205: gcc34-visibility3.patch.bz2
 
-BuildRoot:	%{_tmppath}/%{name}-%{version}-root
 # Want updated alternatives priorities
 %if %{build_cross}
 Conflicts:	gcc-cpp < 3.2.2-4mdk
