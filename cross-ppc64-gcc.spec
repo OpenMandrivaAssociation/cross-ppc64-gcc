@@ -813,7 +813,7 @@ documentation in PDF.
 %patch116 -p1 -b .biarch-personality
 # FIXME: use a configure flag
 optflags=`echo $RPM_OPT_FLAGS | sed -e 's/-mcpu=/-mtune=/'`
-perl -pi -e "s,\@MDK_OPT_FLAGS\@,$optflags," \
+perl -pi -e "s&\@MDK_OPT_FLAGS\@&$optflags&" \
 	libstdc++-v3/include/Makefile.am \
 	libstdc++-v3/include/Makefile.in
 
