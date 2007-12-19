@@ -9,7 +9,7 @@
 %define version			3.4.3
 #define snapshot_version	%{version}
 %define snapshot_version	3.4.4
-%define release			%mkrel 7
+%define release			%mkrel 8
 %define biarches		x86_64
 
 # TODO: Provide fastjar, gccint info pages?
