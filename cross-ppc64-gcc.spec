@@ -245,7 +245,7 @@ License:	GPL
 Group:		Development/C
 
 # Main source:	(CVS)
-URL:		http://gcc.gnu.org/
+URL:		https://gcc.gnu.org/
 Source0:	%{source_package}.tar.bz2
 Source1:	gcc34-java.bz2
 Source2:	gcc34-javac.bz2
