@@ -309,6 +309,7 @@ Conflicts:	gcc-cpp < 3.2.2-4mdk
 %endif
 %endif
 Requires:	%{cross_prefix}binutils >= %{binutils_version}
+BuildRequires:	make
 BuildRequires:	%{cross_prefix}binutils >= %{binutils_version}
 # Make sure gdb will understand DW_FORM_strp
 Conflicts:	gdb < 5.1.1
